@@ -2,7 +2,7 @@
 Generate augmented time series batches for sequence to sequence deep learning when training an LSTM/RNN.
 
 This repo is for anyone training a sequence to seqeunce model that wants to use time series data augmentation on the fly
-It makes use of the awesome [tsaug library](https://tsaug.readthedocs.io/en/stable/).
+It makes use of the awesome time series augmentation functions from [tsaug library](https://tsaug.readthedocs.io/en/stable/).
 
 It expects data loaded into memory in this format:
 X_train: 3D array (N_sequences, sequence length, n_features)
