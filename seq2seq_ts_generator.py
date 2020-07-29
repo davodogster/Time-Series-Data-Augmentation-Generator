@@ -45,7 +45,7 @@ def tsaug_generator(X_all, y_all, batch_size):
             x1 = X_all[random_sig_idx].flatten()
             y1 = y_all[random_sig_idx].flatten()
 
-            # Add noise into data window and normalize it again
+            # Augment X and y and normalize it again
 
             X_aug, y_aug = my_augmenter.augment(x1, y1)
             X_aug = normalize_bound(X_aug, lb=-1, ub=1)
