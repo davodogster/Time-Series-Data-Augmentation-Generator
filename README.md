@@ -13,11 +13,11 @@ y_train: 3D array (N_sequences, sequence length, n_classes)
 ```
 import seq2seq_ts_generator as tsaug_gen
 
-training_gen = tsaug_gen.tsaug_generator(X_train, y_train, batch_size= 128)
+training_gen = tsaug_gen.tsaug_generator(X_train, y_train, batch_size=128)
 n = next(training_gen)
 print(n)
 hist = model.fit_generator(training_gen, epochs=100, 
-                                       verbose = 2, use_multiprocessing=True,
+                                       verbose=2, use_multiprocessing=True,
                            steps_per_epoch=16) 
 ```
 
