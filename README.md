@@ -7,7 +7,7 @@ It makes use of the awesome [tsaug library](https://tsaug.readthedocs.io/en/stab
 # Usage
 
 ```
-import tsaug_generator
+import seq2seq_ts_generator
 
 training_gen = tsaug_generator.tsaug_generator(X_train, y_train, batch_size= 128)
 n = next(training_gen)
